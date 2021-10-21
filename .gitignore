@@ -1,3 +1,18 @@
 # vim
-*swo
-*swp
+*.swo
+*.swp
+
+# c
+*.elf
+*.o
+*.exe
+
+# asm
+*.cof
+*.obj
+
+# arduino c
+build-uno   # refer to arduino makefile
+
+# arduino machine code
+*.hex
