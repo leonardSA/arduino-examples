@@ -38,6 +38,14 @@ MAIN:	; CONFIGURE LED PIN (9)
 		rjmp 	LOOP
 
 LOOP:
+;  _____
+; < Nop >
+;  -----
+; 		\   ^__^
+; 		 \  (oo)\_______
+; 			(__)\       )\/\
+; 				||----w |
+; 				||     ||
         nop
  		rjmp 	LOOP
 	
