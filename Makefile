@@ -15,8 +15,8 @@ compile:
 					"does not exists\e[0m"			   ;\
 					continue 						   ;\
 				fi									   ;\
-				make -C $$src_dir				   	   ;\
-				if [ $$? ] ; then						\
+				make -sC $$src_dir				   	   ;\
+				if [ "0" = $$? ] ; then				    \
 					echo "\e[1;32m$$src_dir was built"  \
 						 "\e[0m" 		   			   ;\
 				else								    \
@@ -36,7 +36,7 @@ clean:
 				if [ ! -d $$src_dir ] ; then		    \
 					continue						   ;\
 				fi									   ;\
-				make clean -C $$src_dir		   		   ;\
+				make clean -sC $$src_dir	   		   ;\
 				if [ "0" = $$? ] ; then			        \
 					echo "\e[1;32m$$src_dir was cleaned"\
 						 "\e[0m" 		   			   ;\
