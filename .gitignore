@@ -12,7 +12,8 @@
 *.obj
 
 # arduino c
-build-uno   # refer to arduino makefile
+# refer to arduino makefile
+build-uno
 
 # arduino machine code
 *.hex
