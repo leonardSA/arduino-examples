@@ -9,12 +9,6 @@
 
 #define TOGGLE_LED_DELAY  (300)
 
-/* bool isOn = false; */
-
-/* void setup(void) { */
-/*     DDRB |= _BV(PORTB1); // output for led is B1 */
-/*     PORTD |= _BV(PIND2); // input for switch is D2 */
-/* } */
 
 int main(void) {
     DDRB |= _BV(PORTB1); // output for led is B1
